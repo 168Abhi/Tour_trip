@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               *{
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+        }
+       body{ background-color:rgb(2, 35, 46);
+            background-size: cover;
+            color: skyblue;
+        }
+            .login-form{
+                width: 300px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                position: absolute;
+                color: #fff;
+            }
+            .login-form h1{
+                font-size: 40px;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 40px 0;
+            }
+            .login-form p{
+                font-size: 20px;
+                margin: 15px 0;
+            }
+            .login-form input{
+                font-size: 16px;
+                width: 100%;
+                padding: 15px 10px;
+                border: 0;
+                outline: none;
+                border-radius: 3px;
+
+            }
+            .login-form button{
+                font-size: 18px;
+                font-weight: bold;
+                margin: 20px;
+                padding: 10px 15px;
+                width: 50%;
+                border-radius: 5px;
+                border: 0px;
+            }
+            .login-form button:hover{
+                color: red;
+            }
+            
+    .navbar{
+        height: 15%;
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        width: 60px;
+        cursor: pointer;
+        margin-left: 60px;
+    }
+    .menu-icon{
+        width:50px;
+        cursor: pointer;
+        margin-left: 60px;
+    }
+ nav{
+           flex: 1;
+           text-align: right;
+           margin-right: 40px;
+
+       }
+       nav ul li{
+           list-style: none;
+           display: inline-block;
+           margin-left: 60px;
+       }
+       nav ul li a{
+           text-decoration: none;
+           color: #fff;
+           font-size: 13px;
+       }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="img/download.jpg" alt="logo" class="logo">
+        <nav>
+            <ul>
+             <li> <a href="nav.htm">HOME</a></li>
+             <li><a href="gallery.htm">GALLERY</a></li>
+             <li><a href="About.htm">ABOUT US</a></li>
+             <li><a href="Registration page.htm">REGISTRATION</a></li>
+             <li><a href="detail.htm">HOTELS</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="login-form">
+        <h1>login Form</h1>
+        <form action="404page.htm" method="form">
+            <p>User Name</p>
+            <input type="text" name="user" placeholder="User Name" required>
+            <p>Password</p>
+                <input type="password" name="password" placeholder="password" required>
+                <button type="submit">login</button>
+        </form>
+    </div>
+</body>
+</html>

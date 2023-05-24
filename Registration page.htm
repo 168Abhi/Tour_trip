@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+       body{ background-color:rgb(169, 221, 238);
+            background-size: cover;
+            color: rgb(252, 143, 0);
+        }
+        .registration-form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 350px;
+
+        }
+        .registration-form h1{
+            font: size 20px;
+            margin: 15px 0;
+        }
+        .registration-form input{
+            font: size 16px;
+            padding: 10px 10px;
+            width: 100%;
+            border: 0;
+            border-radius: 5px;
+            outline: none;
+        }
+        .registration-form button{
+            font-size: 18px;
+            font-weight: bold;
+            margin:20px;
+            padding: 10px 10px;
+            width: 50%;
+            border:0;
+            border-radius: 5px;}
+            .registration-form button:hover{
+                color: brown;
+
+            }
+    .navbar{
+        height: 15%;
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        width: 60px;
+        cursor: pointer;
+        margin-left: 70px;
+    }
+    .menu-icon{
+        width:50px;
+        cursor: pointer;
+        margin-left: 60px;
+    }
+ nav{
+           flex: 1;
+           text-align: right;
+           margin-right: 30px;
+
+       }
+       nav ul li{
+           list-style: none;
+           display: inline-block;
+           margin-left: 60px;
+       }
+       nav ul li a{
+           text-decoration: none;
+           color: rgb(219, 80, 80);
+           font-size: 13px;
+       }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="img/download.jpg" alt="logo" class="logo">
+        <nav>
+            <ul>
+             <li> <a href="nav.htm">HOME</a></li>
+             <li><a href="gallery.htm">GALLERY</a></li>
+             <li><a href="About.htm">ABOUT US</a></li>
+             <li><a href="Registration page.htm">REGISTRATION</a></li>
+             <li><a href="detail.htm">HOTELS</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="registration-form">
+        <h1>Registration Form</h1>
+        <form action="login grid.htm" method="post">
+            <p> Full Name:</p>
+            <input type="text" name="fullname" placeholder="full name" required>
+            <p>User Nmae:</p>
+            <input type="text" name="username" placeholder="User Name" required>
+            <p>Email:</p>
+            <input type="email" name="email" placeholder="@email.com" required>
+            <p>Password:</p>
+            <input type="password" name="password" placeholder="password" required>
+            <button type="submit"><a href="login grid.htm" class="href">Registration</a></button>
+        </form></div>
+    
+</body>
+</html>
